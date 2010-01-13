@@ -115,6 +115,24 @@ QByteArray GpxExporter::save(const QList<QList<IgotuPoint> > &tracks,
                     << "</time>\n"
                 << xmlIndent(2) << "<sat>" << point.satellites().count()
                     << "</sat>\n"
+                << xmlIndent(2) << "<extensions>\n"
+                << xmlIndent(3) << "<ehpe unit=\"m\">" << point.ehpe()
+                    << "</ehpe>\n"
+                << xmlIndent(3) << "<course>" << point.course() << "</course>\n"
+                << xmlIndent(3) << "<msv-qcn>" << point.msvsQcn()
+                    << "</msv-qcn>\n"
+                << xmlIndent(3) << "<satellites>";
+            Q_FOREACH (unsigned satellite, point.satellites())
+                out << QString::fromLatin1(" %1").arg(satellite);
+            out     << "</satellites>\n"
+                << xmlIndent(3) << "<timeout>" << point.timeout()
+                    << "</timeout>\n"
+                << xmlIndent(3) << "<weight>" << point.weightCriteria()
+                    << "</weight>\n"
+                << xmlIndent(3) << "<sleeptime>" << point.sleepTime()
+                    << "</sleeptime>\n"
+                << xmlIndent(3) << "<flags>" << point.flags() << "</flags>\n"
+                << xmlIndent(2) << "</extensions>\n"
                 << xmlIndent(1) << "</wpt>\n";
         }
     }
@@ -125,7 +143,7 @@ QByteArray GpxExporter::save(const QList<QList<IgotuPoint> > &tracks,
         if (!tracksAsSegments)
             out << xmlIndent(1) << "<trk>\n";
         out << xmlIndent(2) << "<trkseg>\n";
-        Q_FOREACH (const IgotuPoint &point, track)
+        Q_FOREACH (const IgotuPoint &point, track) {
             out << xmlIndent(3) << "<trkpt "
                 << qSetRealNumberPrecision(6)
                 << "lat=\"" << point.latitude() << "\" "
@@ -138,7 +156,26 @@ QByteArray GpxExporter::save(const QList<QList<IgotuPoint> > &tracks,
                     << "</sat>\n"
                 << xmlIndent(4) << "<speed>" << point.speed() / 3.6
                     << "</speed>\n"
+                << xmlIndent(4) << "<extensions>\n"
+                << xmlIndent(5) << "<ehpe unit=\"m\">" << point.ehpe()
+                    << "</ehpe>\n"
+                << xmlIndent(5) << "<course>" << point.course() << "</course>\n"
+                << xmlIndent(5) << "<msv-qcn>" << point.msvsQcn()
+                    << "</msv-qcn>\n"
+                << xmlIndent(5) << "<satellites>";
+            Q_FOREACH (unsigned satellite, point.satellites())
+                out << QString::fromLatin1(" %1").arg(satellite);
+            out     << "</satellites>\n"
+                << xmlIndent(5) << "<timeout>" << point.timeout()
+                    << "</timeout>\n"
+                << xmlIndent(5) << "<weight>" << point.weightCriteria()
+                    << "</weight>\n"
+                << xmlIndent(5) << "<sleeptime>" << point.sleepTime()
+                    << "</sleeptime>\n"
+                << xmlIndent(5) << "<flags>" << point.flags() << "</flags>\n"
+                << xmlIndent(4) << "</extensions>\n"
                 << xmlIndent(3) << "</trkpt>\n";
+        }
         out << xmlIndent(2) << "</trkseg>\n";
         if (!tracksAsSegments)
             out << xmlIndent(1) << "</trk>\n";
