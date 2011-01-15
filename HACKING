@@ -347,7 +347,7 @@ GT-120, Firmware 3.03, @trip PC 2.0 811.2582
 
 ----
   purge = false
-  blocks = 0x200
+  blocks = 0x800
   for i = blocks - 1; i > 0; --i:
     if purge:
       while UnknownWriteCommand2(0x0001) != 0x00:
@@ -364,6 +364,34 @@ GT-120, Firmware 3.03, @trip PC 2.0 811.2582
     UnknownPurgeCommand1(0x1f)
     while UnknownWriteCommand2(0x0001) != 0x00:
       pass
+  UnknownPurgeCommand1(0x1e)
+  UnknownPurgeCommand1(0x1f)
+----
+
+GT-600, Firmware 5.24, @trip PC 3.2 1012.751
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+----
+  purge = false
+  blocks = 0x200
+  for i = blocks - 1; i > 0; --i:
+    if purge:
+      while UnknownWriteCommand2(0x0001) != 0x00:
+        pass
+    else:
+      if ReadCommand(i * 0x1000, 0x10) != rep(0xff, 0x10):
+        purge = true
+      else:
+        continue
+    UnknownWriteCommand1(0x00)
+    WriteCommand(0x20, i * 0x1000, '')
+  if purge:
+    UnknownPurgeCommand1(0x1d)
+    UnknownPurgeCommand1(0x1e)
+    UnknownPurgeCommand1(0x1f)
+    while UnknownWriteCommand2(0x0001) != 0x00:
+      pass
+  UnknownPurgeCommand1(0x1d)
   UnknownPurgeCommand1(0x1e)
   UnknownPurgeCommand1(0x1f)
 ----
@@ -413,9 +441,9 @@ Configuration data:
           0x80: LED flashing when valid data is recorded is disabled
   0x0004: uint8 max allowed time when button is pushed and start tracer mode?
   0x0005: uint8 initial timeout when button is pushed and start tracer mode?
-  0x0004: uint8 max allowed time when RTC power of GPS is lost (data/time is
+  0x0006: uint8 max allowed time when RTC power of GPS is lost (data/time is
           not a valid value)
-  0x0005: uint8 initial timeout when RTC power of GPS is lost (data/time is 
+  0x0007: uint8 initial timeout when RTC power of GPS is lost (data/time is 
           not a valid value)
   0x0008: uint8 schedule date offset: start date = utc date + offset
   0x0009..0x00ff: uint4 schedule table plans (1 if no schedule used,

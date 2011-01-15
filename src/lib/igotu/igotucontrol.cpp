@@ -478,6 +478,7 @@ bool IgotuControlPrivateWorker::purge()
         model.sendAndReceive();
 
         unsigned blocks = 1;
+        bool run_UnknownPurgeCommand1_0x1d = false;
 
         switch (model.modelId()) {
         case ModelCommand::Gt100:
@@ -489,6 +490,10 @@ bool IgotuControlPrivateWorker::purge()
         case ModelCommand::Gt200:
             blocks = 0x100;
             break;
+        case ModelCommand::Gt200e:
+        	blocks = 0x800;
+        	run_UnknownPurgeCommand1_0x1d = true;
+        	break;
         default:
             throw Exception(IgotuControl::tr
                     ("%1: Unable to clear memory of this GPS tracker model. "
@@ -517,10 +522,14 @@ bool IgotuControlPrivateWorker::purge()
                     .sendAndReceive();
             }
             if (purgeBlocks) {
+            	if (run_UnknownPurgeCommand1_0x1d)
+            		UnknownPurgeCommand1(connection.get(), 0x1d).sendAndReceive();
                 UnknownPurgeCommand1(connection.get(), 0x1e).sendAndReceive();
                 UnknownPurgeCommand1(connection.get(), 0x1f).sendAndReceive();
                 waitForWrite();
             }
+            if (run_UnknownPurgeCommand1_0x1d)
+            	UnknownPurgeCommand1(connection.get(), 0x1d).sendAndReceive();
             UnknownPurgeCommand1(connection.get(), 0x1e).sendAndReceive();
             UnknownPurgeCommand1(connection.get(), 0x1f).sendAndReceive();
             emit commandRunning(blocks, blocks);
