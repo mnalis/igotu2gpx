@@ -145,10 +145,22 @@ QDateTime IgotuPoint::dateTime() const
         (reinterpret_cast<const uchar*>(record.data()) + 4);
 
     return QDateTime
-        (QDate(2000 + ((date >> 20) & 0xf), (date >> 16) & 0xf,
+        (QDate(year((date >> 20) & 0xf), (date >> 16) & 0xf,
                (date >> 11) & 0x1f),
          QTime((date >> 6) & 0x1f, date & 0x3f, sec / 1000, sec % 1000),
          Qt::UTC);
+}
+
+int IgotuPoint::year(unsigned yearOffset) const
+{
+    const int currentYear = QDate::currentDate().year();
+    const int quotient = (currentYear - 2000) / 16;
+    int year = 2000 + 16 * quotient + yearOffset;
+
+    if (year > currentYear)
+        year -= 16;
+
+    return year;
 }
 
 QString IgotuPoint::dateTimeString(int utcOffset) const

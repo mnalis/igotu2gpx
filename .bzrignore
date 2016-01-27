@@ -44,3 +44,6 @@ object_script.*
 /igotu2gpx-*.zip
 
 /debian/tmp/
+
+# MacOS X
+.DS_Store

@@ -126,7 +126,7 @@ QByteArray ModelCommand::sendAndReceive()
             id = Gt120;
             break;
         case 0x17:
-            name = IgotuCommand::tr("GT-200e");
+            name = IgotuCommand::tr("GT-200e/GT-600");
             id = Gt200e;
             break;
         }
@@ -161,6 +161,8 @@ QByteArray CountCommand::sendAndReceive()
         throw Exception(IgotuCommand::tr("Response too short"));
     count = qFromBigEndian<quint16>(reinterpret_cast<const uchar*>
             (result.data() + 1));
+    count += result.data()[0]<<16;
+
     return result;
 }
 

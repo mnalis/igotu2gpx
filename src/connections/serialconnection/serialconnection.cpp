@@ -26,6 +26,7 @@
 #else
 #include <cerrno>
 #include <fcntl.h>
+#include <unistd.h>
 #include <termios.h>
 #include <unistd.h>
 #endif
