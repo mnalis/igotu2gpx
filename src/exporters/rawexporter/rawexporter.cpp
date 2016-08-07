@@ -31,6 +31,7 @@ class RawExporter :
 {
     Q_OBJECT
     Q_INTERFACES(igotu::FileExporter)
+    Q_PLUGIN_METADATA(IID "igotu.RawExporter")
 public:
     virtual Mode mode() const;
     virtual int exporterPriority() const;
@@ -43,8 +44,6 @@ public:
     virtual QByteArray save(const IgotuData &data,
             bool tracksAsSegments, int utcOffset) const;
 };
-
-Q_EXPORT_PLUGIN2(rawExporter, RawExporter)
 
 // RawExporter =====================================================
 

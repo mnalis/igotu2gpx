@@ -65,6 +65,7 @@ class ListVisualizerCreator :
 {
     Q_OBJECT
     Q_INTERFACES(TrackVisualizerCreator)
+    Q_PLUGIN_METADATA(IID "igotu.ListVisualizerCreator")
 public:
     virtual QString trackVisualizer() const;
     virtual int visualizerPriority() const;
@@ -73,8 +74,6 @@ public:
     virtual TrackVisualizer *createTrackVisualizer(AppearanceMode mode,
             QWidget *parent = NULL) const;
 };
-
-Q_EXPORT_PLUGIN2(listVisualizer, ListVisualizerCreator)
 
 static QString formatCoordinates(const IgotuPoint &point)
 {

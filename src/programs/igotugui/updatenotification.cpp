@@ -22,7 +22,9 @@
 
 #include <QCoreApplication>
 #include <QDateTime>
+#ifdef UPDATE_NOTIFICATION
 #include <QHttp>
+#endif
 #include <QProcess>
 #include <QSettings>
 #include <QSslError>
@@ -37,7 +39,9 @@ class UpdateNotificationPrivate : public QObject
 {
     Q_OBJECT
 public:
+#ifdef UPDATE_NOTIFICATION
     QString releaseUrl() const;
+#endif
     QDateTime lastCheck() const;
     QString ignoredVersion() const;
     QString uuid() const;
@@ -47,24 +51,31 @@ public:
     void setLastCheck();
 
 public Q_SLOTS:
+#ifdef UPDATE_NOTIFICATION
     void on_http_sslErrors(const QList<QSslError> &errors);
     void on_http_done(bool error);
+#endif
     void on_lsbRelease_finished(int exitCode, QProcess::ExitStatus exitStatus);
     void on_lsbRelease_error();
 
 public:
     UpdateNotification *p;
+#ifdef UPDATE_NOTIFICATION
     QHttp *http;
+#endif
     QProcess *lsbRelease;
     bool lsbReleaseError;
     UpdateNotification::Type type;
 };
 
+#ifdef UPDATE_NOTIFICATION
 #define NOTIFY_URL QLatin1String("Updates/releaseUrl")
+#endif
 #define NOTIFY_LAST QLatin1String("Updates/lastCheck")
 #define NOTIFY_IGNORE QLatin1String("Updates/ignoreVersion")
 #define NOTIFY_UUID QLatin1String("Updates/uuid")
 
+#ifdef UPDATE_NOTIFICATION
 #define DEFAULT_RELEASE_URL QLatin1String("https://mh21.de/igotu2gpx/releases.txt")
 
 // CAcert is not included per default, but the certificate at mh21.de
@@ -149,13 +160,16 @@ const char class3CaCert[] =
     "FFxtbUFm3xuTsdQAw+7Lzzw9IYCpX2Nl/N3gX6T0K/CFcUHUZyX7GrGXrtaZghNB\n"
     "0m6lG5kngOcLqagA\n"
     "-----END CERTIFICATE-----\n";
+#endif
 
 // UpdateNotificationPrivate ===================================================
 
+#ifdef UPDATE_NOTIFICATION
 QString UpdateNotificationPrivate::releaseUrl() const
 {
     return QSettings().value(NOTIFY_URL, DEFAULT_RELEASE_URL).toString();
 }
+#endif
 
 QDateTime UpdateNotificationPrivate::lastCheck() const
 {
@@ -210,6 +224,7 @@ bool UpdateNotificationPrivate::newerVersion(const QString &oldVersion,
 
 void UpdateNotificationPrivate::requestReleases(const QString &os)
 {
+#ifdef UPDATE_NOTIFICATION
     QUrl url = releaseUrl();
 
     RETURN_IF_FAIL(url.scheme().toLower() == QLatin1String("https") ||
@@ -238,8 +253,10 @@ void UpdateNotificationPrivate::requestReleases(const QString &os)
     header.setValue(QLatin1String("User-Agent"), QLatin1String("Igotu2gpx/") +
             QLatin1String(IGOTU_VERSION_STR));
     http->request(header);
+#endif
 }
 
+#ifdef UPDATE_NOTIFICATION
 void UpdateNotificationPrivate::on_http_sslErrors(const QList<QSslError> &errors)
 {
     Q_FOREACH (const QSslError &error, errors)
@@ -298,6 +315,7 @@ void UpdateNotificationPrivate::on_http_done(bool error)
     emit p->newVersionAvailable(newestVersion,
             settings.value(QLatin1String("name")).toString(), url);
 }
+#endif
 
 void UpdateNotificationPrivate::on_lsbRelease_error()
 {
@@ -334,13 +352,17 @@ UpdateNotification::UpdateNotification(QObject *parent) :
 {
     d->p = this;
 
+#ifdef UPDATE_NOTIFICATION
     QSslSocket::addDefaultCaCertificate(QSslCertificate(QByteArray(rootCaCert)));
     QSslSocket::addDefaultCaCertificate(QSslCertificate(QByteArray(class3CaCert)));
+#endif
 
     setUpdateNotification(defaultUpdateNotification());
 
+#ifdef UPDATE_NOTIFICATION
     d->http = new QHttp(this);
     d->http->setObjectName(QLatin1String("http"));
+#endif
 
     d->lsbRelease = new QProcess(this);
     d->lsbRelease->setObjectName(QLatin1String("lsbRelease"));

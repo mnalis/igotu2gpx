@@ -56,7 +56,7 @@ int IgotuCommandPrivate::receiveResponseSize()
                 .arg(3).arg(data.size()));
     if (data[0] != '\x93')
         throw IgotuProtocolError(IgotuCommand::tr("Invalid response packet: %1")
-                .arg(QString::fromAscii(data.toHex())));
+                .arg(QString::fromLatin1(data.toHex())));
     return qFromBigEndian<qint16>(reinterpret_cast<const uchar*>
             (data.data() + 1));
 }
@@ -94,7 +94,7 @@ unsigned IgotuCommandPrivate::sendCommand(const QByteArray &data)
         if (responseSize != 0 && i + 1 < pieces)
             throw IgotuProtocolError(IgotuCommand::tr
                     ("Non-empty intermediate response packet: %1")
-                    .arg(QString::fromAscii(data.toHex())));
+                    .arg(QString::fromLatin1(data.toHex())));
     }
     return responseSize;
 }
@@ -172,7 +172,7 @@ QByteArray IgotuCommand::sendAndReceive()
                 // ignore protocol errors if switched to NMEA mode
                 if (d->ignoreProtocolErrors) {
                     Messages::verboseMessage(tr("Command: %1")
-                                .arg(QString::fromAscii(d->command.toHex())));
+                                .arg(QString::fromLatin1(d->command.toHex())));
                     Messages::verboseMessage(tr("Protocol violated (ignored): %1")
                                 .arg(QString::fromLocal8Bit(e.what())));
                     return remainder;
@@ -181,7 +181,7 @@ QByteArray IgotuCommand::sendAndReceive()
                 ++protocolErrors;
                 if (protocolErrors <= 5) {
                     Messages::verboseMessage(tr("Command: %1")
-                                .arg(QString::fromAscii(d->command.toHex())));
+                                .arg(QString::fromLatin1(d->command.toHex())));
                     Messages::verboseMessage(tr("Protocol violated : %1")
                                 .arg(QString::fromLocal8Bit(e.what())));
                     continue;
@@ -192,7 +192,7 @@ QByteArray IgotuCommand::sendAndReceive()
                 ++deviceErrors;
                 if (deviceErrors <= 3) {
                     Messages::verboseMessage(tr("Command: %1")
-                                .arg(QString::fromAscii(d->command.toHex())));
+                                .arg(QString::fromLatin1(d->command.toHex())));
                     Messages::verboseMessage(tr("Device error: %1")
                                 .arg(QString::fromLocal8Bit(e.what())));
                     continue;
@@ -201,14 +201,14 @@ QByteArray IgotuCommand::sendAndReceive()
             }
 
             Messages::verboseMessage(tr("Command: %1")
-                        .arg(QString::fromAscii(d->command.toHex())));
+                        .arg(QString::fromLatin1(d->command.toHex())));
             Messages::verboseMessage(tr("Result: %1")
-                        .arg(QString::fromAscii(remainder.toHex())));
+                        .arg(QString::fromLatin1(remainder.toHex())));
             return remainder;
         }
     } catch (const std::exception &e) {
         Messages::verboseMessage(tr("Command: %1")
-                    .arg(QString::fromAscii(d->command.toHex())));
+                    .arg(QString::fromLatin1(d->command.toHex())));
         Messages::verboseMessage(tr("Failed: %1")
                     .arg(QString::fromLocal8Bit(e.what())));
         throw;

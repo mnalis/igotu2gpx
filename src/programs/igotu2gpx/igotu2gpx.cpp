@@ -201,7 +201,7 @@ int main(int argc, char *argv[])
                         ("Unable to read file '%1'").arg(imagePath));
             QByteArray contents = file.readAll();
             device = QLatin1String("image:") +
-                QString::fromAscii(contents.toBase64());
+                QString::fromLatin1(contents.toBase64());
         }
 
         Messages::setVerbose(verbose);

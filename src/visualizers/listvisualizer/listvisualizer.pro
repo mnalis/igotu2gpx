@@ -2,6 +2,6 @@ CLEBS *= buildplugin visualizer igotu
 TARGET = listvisualizer
 include(../../../clebs.pri)
 
-QT *= gui
+QT *= gui widgets
 
 SOURCES *= $$files(*.cpp)
