@@ -144,11 +144,13 @@ QDateTime IgotuPoint::dateTime() const
     const unsigned sec = qFromBigEndian<quint16>
         (reinterpret_cast<const uchar*>(record.data()) + 4);
 
-    return QDateTime
-        (QDate(2000 + ((date >> 20) & 0xf), (date >> 16) & 0xf,
-               (date >> 11) & 0x1f),
-         QTime((date >> 6) & 0x1f, date & 0x3f, sec / 1000, sec % 1000),
-         Qt::UTC);
+    return QDateTime(
+        QDate(
+          ((QDate::currentDate().year() + 4 - ((date >> 20) & 0xf)) & 0xfff0) + ((date >> 20) & 0xf),
+          (date >> 16) & 0xf,
+          (date >> 11) & 0x1f),
+        QTime((date >> 6) & 0x1f, date & 0x3f, sec / 1000, sec % 1000),
+        Qt::UTC);
 }
 
 QString IgotuPoint::dateTimeString(int utcOffset) const
