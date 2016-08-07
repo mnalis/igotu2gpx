@@ -155,7 +155,7 @@ UpdateNotification::Type PreferencesDialogPrivate::currentUpdateNotification()
 
     return UpdateNotification::Type(enumKeyToValue
             (UpdateNotification::staticMetaObject, "Type",
-             QSettings().value(UPDATE_PREF).toString().toAscii()));
+             QSettings().value(UPDATE_PREF).toString().toLatin1()));
 }
 
 void PreferencesDialogPrivate::setCurrentTracksAsSegments(bool tracksAsSegments)

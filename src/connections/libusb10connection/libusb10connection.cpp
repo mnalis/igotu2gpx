@@ -105,14 +105,13 @@ class Libusb10ConnectionCreator :
 {
     Q_OBJECT
     Q_INTERFACES(igotu::DataConnectionCreator)
+    Q_PLUGIN_METADATA(IID "igotu.Libusb10ConnectionCreator")
 public:
     virtual QString dataConnection() const;
     virtual int connectionPriority() const;
     virtual QString defaultConnectionId() const;
     virtual DataConnection *createDataConnection(const QString &id) const;
 };
-
-Q_EXPORT_PLUGIN2(libusb10Connection, Libusb10ConnectionCreator)
 
 // Put translations in the right context
 //

@@ -108,7 +108,7 @@ QByteArray ModelCommand::sendAndReceive()
     const unsigned part2 =
         *reinterpret_cast<const uchar*>(result.data() + 2);
 
-    name = IgotuCommand::tr("Unknown (%1)").arg(QString::fromAscii
+    name = IgotuCommand::tr("Unknown (%1)").arg(QString::fromLatin1
             (result.toHex()));
     id = Unknown;
     if (part1 == 0xC220) {

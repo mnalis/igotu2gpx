@@ -72,6 +72,7 @@ class MarbleVisualizerCreator :
 {
     Q_OBJECT
     Q_INTERFACES(TrackVisualizerCreator)
+    Q_PLUGIN_METADATA(IID "igotu.MarbleVisualizerCreator")
 public:
     virtual QString trackVisualizer() const;
     virtual int visualizerPriority() const;
@@ -80,8 +81,6 @@ public:
     virtual TrackVisualizer *createTrackVisualizer(AppearanceMode mode,
             QWidget *parent = NULL) const;
 };
-
-Q_EXPORT_PLUGIN2(marbleVisualizer, MarbleVisualizerCreator)
 
 // MarbleVisualizer ============================================================
 

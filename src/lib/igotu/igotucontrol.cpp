@@ -188,7 +188,7 @@ void IgotuControlPrivateWorker::connect()
         .toLower();
     const QString name = p->device.section(QLatin1Char(':'), 1);
     if (protocol == QLatin1String("image")) {
-        image = QByteArray::fromBase64(name.toAscii());
+        image = QByteArray::fromBase64(name.toLatin1());
         connectedDevice = p->device;
     } else {
         Q_FOREACH (DataConnectionCreator *creator, p->creators()) {
@@ -670,7 +670,7 @@ void IgotuControlPrivateWorker::configureCommand(const QVariantMap &config)
     QMapIterator<QString, QVariant> i(config);
     while (i.hasNext()) {
         i.next();
-        const QByteArray key = i.key().toAscii();
+        const QByteArray key = i.key().toLatin1();
         if (key == "interval") {
             // TODO: disable schedule
             ScheduleTableEntry entry = igotuConfig.scheduleTableEntries(1).value(0);

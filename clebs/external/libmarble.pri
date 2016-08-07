@@ -5,7 +5,7 @@ clebsCheck(libmarble) {
 	isEmpty(MARBLELIBDIR):MARBLELIBDIR = $${MARBLEROOT}
 	isEmpty(MARBLELIBDIR_RELEASE):MARBLELIBDIR_RELEASE = $${MARBLELIBDIR}
 	isEmpty(MARBLELIBDIR_DEBUG):MARBLELIBDIR_DEBUG = $${MARBLELIBDIR}
-	isEmpty(MARBLELIB_RELEASE):MARBLELIB_RELEASE = marblewidget
+	isEmpty(MARBLELIB_RELEASE):MARBLELIB_RELEASE = marblewidget-qt5
 	isEmpty(MARBLELIB_DEBUG):MARBLELIB_DEBUG = marblewidgetd
 
 	exists($${MARBLEINCLUDEDIR}):CLEBS_DEPENDENCIES *= libmarble
@@ -15,7 +15,7 @@ clebsCheck(libmarble) {
 	isEmpty(MARBLEROOT):MARBLEROOT = /Applications/Marble.app/Contents/MacOS
 	isEmpty(MARBLEINCLUDEDIR):MARBLEINCLUDEDIR = $${MARBLEROOT}/resources/data/include
 	isEmpty(MARBLELIBDIR):MARBLELIBDIR = $${MARBLEROOT}/lib
-	isEmpty(MARBLELIB):MARBLELIB = marblewidget
+	isEmpty(MARBLELIB):MARBLELIB = marblewidget-qt5
 
 	exists($${MARBLEINCLUDEDIR}/marble):CLEBS_DEPENDENCIES *= libmarble
     }
@@ -29,7 +29,7 @@ clebsCheck(libmarble) {
 		MARBLEINCLUDEDIR = /usr/include
 	    }
 	}
-	isEmpty(MARBLELIB):MARBLELIB = marblewidget
+	isEmpty(MARBLELIB):MARBLELIB = marblewidget-qt5
 
 	exists($${MARBLEINCLUDEDIR}/marble):CLEBS_DEPENDENCIES *= libmarble
 	exists($${MARBLEINCLUDEDIR}/marble):CLEBS_DEPENDENCIES *= libmarble

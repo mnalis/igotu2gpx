@@ -100,16 +100,16 @@ void connectSlotsByNameToPrivate(QObject *publicObject, QObject *privateObject)
         return;
     const QMetaObject *mo = privateObject->metaObject();
     RETURN_IF_FAIL(mo);
-    const QObjectList list = qFindChildren<QObject*>(publicObject, QString());
+    const QObjectList list = publicObject->findChildren<QObject*>(QString());
     for (int i = 0; i < mo->methodCount(); ++i) {
-        const char *slot = mo->method(i).signature();
+        const char *slot = mo->method(i).methodSignature().data();
         RETURN_IF_FAIL(slot);
         if (slot[0] != 'o' || slot[1] != 'n' || slot[2] != '_')
             continue;
         bool foundIt = false;
         for(int j = 0; j < list.count(); ++j) {
             const QObject *co = list.at(j);
-            QByteArray objName = co->objectName().toAscii();
+            QByteArray objName = co->objectName().toLatin1();
             int len = objName.length();
             if (!len || qstrncmp(slot + 3, objName.data(), len) ||
                     slot[len+3] != '_')
@@ -122,7 +122,7 @@ void connectSlotsByNameToPrivate(QObject *publicObject, QObject *privateObject)
                     if (smo->method(k).methodType() != QMetaMethod::Signal)
                         continue;
 
-                    if (!qstrncmp(smo->method(k).signature(), slot + len + 4,
+                    if (!qstrncmp(smo->method(k).methodSignature().data(), slot + len + 4,
                                 slotlen)) {
                         sigIndex = k;
                         break;
@@ -157,7 +157,7 @@ void connectWorker(QObject *workerObject, QObject *publicObject, QObject *privat
     for (unsigned i = mo->methodOffset(); i < unsigned(mo->methodCount()); ++i) {
         const QMetaMethod m = mo->method(i);
         const QMetaMethod::MethodType t = m.methodType();
-        const char * const signature = m.signature();
+        const char * const signature = m.methodSignature().data();
         if (t == QMetaMethod::Signal) {
             int index = pubMo->indexOfMethod(signature);
             if (index < 0 ||

@@ -6,6 +6,6 @@ include(../../../clebs.pri)
 # Work around a bug in MarbleModel.h
 DEFINES -= QT_NO_CAST_FROM_ASCII
 
-QT *= gui
+QT *= gui widgets
 
 SOURCES *= $$files(*.cpp)
