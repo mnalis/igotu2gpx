@@ -103,6 +103,13 @@ void MarbleVisualizer::initMarble()
             QLatin1String("/marble"));
     MarbleDirs::setMarbleDataPath(Paths::mainDataDirectory() +
             QLatin1String("/marble"));
+#else
+    if (getenv("MARBLE_PLUGIN_PATH")) {
+        MarbleDirs::setMarblePluginPath(QLatin1String(getenv("MARBLE_PLUGIN_PATH")));
+    }
+    if (getenv("MARBLE_DATA_PATH")) {
+        MarbleDirs::setMarbleDataPath(QLatin1String(getenv("MARBLE_DATA_PATH")));
+    }
 #endif
     tracks = new MarbleWidget(this);
     tracks->setObjectName(QLatin1String("tracks"));
