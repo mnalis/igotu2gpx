@@ -1,0 +1,43 @@
+name: igotu2gpx
+version: '0.4+y2016+qt5'
+summary: Gives access to the i-gotU GPS trackers
+description: |
+  Gives access to the i-gotU GPS trackers via an USB connection. It is possible
+  to see the configuration of the GPS tracker, export tracks and waypoints in
+  gpx format and clear the memory of the tracker.
+
+grade: stable # devel or stable, must be 'stable' to release into candidate/stable channels
+confinement: devmode # strict or devmode, use 'strict' once you have the right plugs and slots
+
+apps:
+  igotugui:
+    command: qt5-launch usr/local/bin/igotugui
+    environment:
+      LD_LIBRARY_PATH: $SNAP_LIBRARY_PATH:$LD_LIBRARY_PATH:$SNAP/usr/local/lib
+      MARBLE_DATA_PATH: $SNAP/usr/share/marble/data
+      MARBLE_PLUGIN_PATH: $SNAP/usr/lib/x86_64-linux-gnu/marble/plugins
+  igotu2gpx:
+    command: usr/local/bin/igotu2gpx
+    environment:
+      LD_LIBRARY_PATH: $LD_LIBRARY_PATH:$SNAP/usr/local/lib
+
+parts:
+  application:
+    plugin: qmake
+    qt-version: qt5
+    stage-packages:
+      - libqt5gui5
+      - libgtk2.0-0
+      - marble-data
+      - marble-plugins
+    build-packages:
+      - qtbase5-dev
+      - qttools5-dev-tools
+      - pkg-config
+      - ctags
+      - gdb
+      - chrpath
+      - libboost-all-dev
+      - libmarble-dev
+      - libusb-dev
+    after: [qt5conf]

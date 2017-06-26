@@ -44,3 +44,9 @@ object_script.*
 /igotu2gpx-*.zip
 
 /debian/tmp/
+
+# snapcraft related
+/parts/
+/prime/
+/stage/
+/*.snap
