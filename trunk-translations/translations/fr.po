@@ -1,0 +1,1129 @@
+# French translation for igotu2gpx
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the igotu2gpx package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: igotu2gpx\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-03-26 21:18+0000\n"
+"PO-Revision-Date: 2015-11-22 14:39+0000\n"
+"Last-Translator: Jean-Marc <Unknown>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Launchpad-Export-Date: 2015-11-23 05:13+0000\n"
+"X-Generator: Launchpad (build 17850)\n"
+
+#. ts-context ConfigurationDialog
+#: ../src/igotugui/configurationdialog.ui:14
+msgid "Tracker Configuration"
+msgstr "Configuration du récepteur"
+
+#. ts-context ConfigurationDialog
+#: ../src/igotugui/configurationdialog.ui:22
+msgid "Trackpoint interval"
+msgstr "Intervalles entre points"
+
+#. ts-context ConfigurationDialog
+#: ../src/igotugui/configurationdialog.ui:32
+#: ../src/igotugui/configurationdialog.ui:88
+msgid "mm:ss"
+msgstr "mm:ss"
+
+#. ts-context ConfigurationDialog
+#: ../src/igotugui/configurationdialog.ui:39
+msgid "Above a speed of"
+msgstr "Au delà d'une vitesse de"
+
+#. ts-context ConfigurationDialog
+#: ../src/igotugui/configurationdialog.ui:49
+msgid " km/h"
+msgstr " km/h"
+
+#. ts-context ConfigurationDialog
+#: ../src/igotugui/configurationdialog.ui:62
+msgid "use an interval of"
+msgstr "Utiliser un intervalle de"
+
+#. ts-context DetailsExporter
+#: ../src/detailsexporter/detailsexporter.cpp:77
+msgid "Text files (%1)"
+msgstr "Fichiers textes (%1)"
+
+#. ts-context GpxExporter
+#: ../src/gpxexporter/gpxexporter.cpp:68
+msgid "GPS exchange format"
+msgstr "Format d'échange GPS"
+
+#. ts-context GpxExporter
+#: ../src/gpxexporter/gpxexporter.cpp:78
+msgid "GPX files (%1)"
+msgstr "Fichiers GPX (%1)"
+
+#. ts-context KmlExporter
+#: ../src/kmlexporter/kmlexporter.cpp:69
+msgid "Google Earth"
+msgstr "Google Earth"
+
+#. ts-context KmlExporter
+#: ../src/kmlexporter/kmlexporter.cpp:79
+msgid "KML files (%1)"
+msgstr "Fichiers KML (%1)"
+
+#. ts-context Libusb10Connection
+#: ../src/libusb10connection/libusb10connection.cpp:107
+msgid "Unable to initialize libusb: %1"
+msgstr "Impossibe d'initialiser libusb : %1"
+
+#. ts-context Libusb10Connection
+#: ../src/libusb10connection/libusb10connection.cpp:170
+msgid "Unable to enumerate usb devices: %1"
+msgstr "Impossible de lister les périphériques USB : %1"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:90
+msgid "W"
+msgstr "O"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:90
+msgid "E"
+msgstr "E"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:94
+msgid "S"
+msgstr "S"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:94
+msgid "N"
+msgstr "N"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:132
+#: ../src/listvisualizer/listvisualizer.cpp:137
+msgid "Date"
+msgstr "Date"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:133
+msgid "Number"
+msgstr "Nombre"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:138
+msgid "Position"
+msgstr "Position"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:139
+msgid "Number of trackpoints"
+msgstr "Nombre de points"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:144
+msgid "Save selected tracks..."
+msgstr "Sauvegarder les trajets sélectionnés..."
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:166
+msgid "%n point(s)"
+msgid_plural "%n point(s)"
+msgstr[0] "%n point"
+msgstr[1] "%n points"
+
+#. ts-context ListVisualizer
+#: ../src/listvisualizer/listvisualizer.cpp:189
+msgid "Track list"
+msgstr "Liste des pistes"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:131
+msgid ""
+"connect to the specified device (usb:<vendor>:<product> (Unix) or serial:<n> "
+"(Windows))"
+msgstr ""
+"connecter au périphérique spécifié (usb: <vendor>: <product> (Unix) ou de "
+"série: <n> (Windows))"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:154
+msgid "time zone offset in seconds"
+msgstr "décalage de fuseau horaire en secondes"
+
+#. Do not translate the word before the colon
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:111
+msgid "info: show GPS tracker configuration"
+msgstr "info : affiche la configuration du traqueur GPS"
+
+#. Used for command line help %1 is the file format name, %2 the description
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:99
+msgid "%1: %2"
+msgstr "%1 : %2"
+
+#. Do not translate the word before the colon
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:114
+msgid "dump: output trackpoints"
+msgstr "dump : sortie des points"
+
+#. Do not translate the word before the colon
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:120
+msgid "clear: clear memory of the GPS tracker"
+msgstr "clear : efface la mémoire du récepteur GPS"
+
+#. Do not translate the word before the colon
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:126
+msgid "diff: show configuration differences relative to an image file"
+msgstr ""
+"diff : montre les différences de configuration par rapport à un fichier image"
+
+#. Do not translate the word before the colon
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:117
+msgid "config: change the configuration of the GPS tracker"
+msgstr "config : change la configuration du récepteur GPS"
+
+#. Do not translate the word before the colon
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:123
+msgid "reset: reset the GPS tracker to factory defaults"
+msgstr "reset"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:136
+msgid "read memory contents from file (saved by \"dump -f raw\")"
+msgstr ""
+"lire le contenu de la mémoire à partir du fichiere (sauvé par \"dump -f "
+"raw\")"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:141
+msgid "change the configuration:"
+msgstr "changer la configuration :"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:146
+msgid "use the specified output format:"
+msgstr "utiliser le format de sortie spécifié :"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:150
+msgid "group trackpoints into segments instead of tracks"
+msgstr "grouper les points par segments au lieu de pistes"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:208 ../src/igotu2gpx/igotu2gpx.cpp:226
+msgid "Unable to read file '%1'"
+msgstr "Impossible de lire le fichier « %1 »"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:223
+msgid "Diff action requires --image"
+msgstr "L'action diff nécessite --image"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:243
+msgid "Unknown action: %1"
+msgstr "Action inconnue : %1"
+
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:248
+msgid "Error: %1"
+msgstr "Erreur : %1"
+
+#. Do not translate the actions (info|dump|clear|diff)
+#. ts-context MainObject
+#: ../src/igotu2gpx/igotu2gpx.cpp:192
+msgid "%1 info|dump|config|clear|reset|diff [OPTIONS...]"
+msgstr "%1 info|dump|config|clear|reset|diff [OPTIONS...]"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.cpp:112
+msgid "%1 [OPTIONS...]"
+msgstr "%1 [OPTIONS...]"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:14
+msgid "Igotu2gpx"
+msgstr "Igotu2gpx"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:34
+msgid "&GPS Tracker"
+msgstr "Traqueur &GPS"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:49
+msgid "&Help"
+msgstr "&Aide"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:83
+msgid "Configuration"
+msgstr "Configuration"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:101
+msgid "&Quit"
+msgstr "&Quitter"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:106 ../src/igotugui/mainwindow.cpp:115
+msgid "About Igotu2gpx"
+msgstr "À propos d'Igotu2gpx"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:114
+msgid "Preferences..."
+msgstr "Préférences..."
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:119
+msgid "&Download Tracks"
+msgstr "&Télécharger des points"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:122
+msgid "Download"
+msgstr "Télécharger"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:125
+msgid "Connect to the GPS tracker and download tracks"
+msgstr "Connectez-vous au traqueur GPS et télécharger les points"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:133
+msgid "&Save All Tracks..."
+msgstr "&Sauvegarder tous les points..."
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:136 ../src/igotugui/igotugui.ui:196
+msgid "Save"
+msgstr "Sauvegarder"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:139
+msgid "Save all GPS tracks"
+msgstr "Enregistrer toutes les pistes GPS"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:179
+msgid "Configure Tracker..."
+msgstr "Configurer le traqueur"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:182
+msgid "Configure"
+msgstr "Configurer"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:185
+msgid "Change the settings of the GPS tracker"
+msgstr "Changer les paramètres du traqueur GPS"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:193
+msgid "&Save Selected Tracks..."
+msgstr "&Enregistrer les pistes sélectionnées"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:199
+msgid "Save the selected GPS tracks"
+msgstr "Enregistrer les pistes GPS sélectionnées"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:144
+msgid "&Clear Memory..."
+msgstr "&Vider la mémoire..."
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:147
+msgid "Clear"
+msgstr "Nettoyer"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:150
+msgid "Clear the memory of the GPS tracker"
+msgstr "Vider la mémoire du traqueur GPS"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:155
+msgid "&Cancel Transfer"
+msgstr "&Annuler le transfert"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:158
+msgid "Cancel"
+msgstr "Annuler"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:161
+msgid "Cancel the current transfer from the GPS tracker"
+msgstr "Annuler le transfert en cours du traqueur GPS"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:166
+msgid "About Plugins"
+msgstr "À propos des greffons"
+
+#. ts-context MainWindow
+#: ../src/igotugui/igotugui.ui:174 ../src/igotugui/mainwindow.cpp:145
+msgid "Debug Information"
+msgstr "Informations de débogage"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:133
+msgid ""
+"<h3>Versions</h3>Compiled against Qt %1<br/>Running with Qt "
+"%2<h3>Translation Directories</h3>%3<h3>Icon Directories</h3>%4<h3>Plugin "
+"Directories</h3>%5"
+msgstr ""
+"<h3>Versions</h3>Compilée avec Qt %1<br/>Fonctionne avec Qt "
+"%2<h3>Répertoires de Traduction</h3>%3<h3>Répertoires "
+"d'Icône</h3>%4<h3>Répertoires de Greffon</h3>%5"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:179 ../src/igotugui/mainwindow.cpp:184
+msgid "Clear Memory"
+msgstr "Vider la mémoire"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:179
+msgid "Do you really want to remove all tracks from the GPS tracker?"
+msgstr "Voulez vraiment supprimer toutes les traces du récepteur GPS ?"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:246
+msgid "New Version Available"
+msgstr "Nouvelle version disponible"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:246
+msgid "You can download and install a newer version of igotu2gpx: %1"
+msgstr ""
+"Vous pouvez télécharger et installer une version plus récente d'igotu2gpx : "
+"%1"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:251
+msgid "Later"
+msgstr "Plus tard"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:253
+msgid "Never"
+msgstr "Jamais"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:255
+msgid "Go to Download Page"
+msgstr "Aller à la page de téléchargement"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:395
+msgid "Save GPS Tracks"
+msgstr "Sauvegarder les pistes GPS"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:424
+msgid "Unable to create file: %1"
+msgstr "Impossible de créer un fichier : %1"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:435
+msgid "Unable to save file: %1"
+msgstr "Impossible de sauvegarder un fichier : %1"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:438
+msgid "File Error"
+msgstr "Erreur de fichier"
+
+#. ts-context MainWindow
+#: ../src/igotugui/mainwindow.cpp:439
+msgid "Unable to save tracks: %1"
+msgstr "Impossible d'enregistrer des points : %1"
+
+#. ts-context MarbleVisualizer
+#: ../src/marblevisualizer/marblevisualizer.cpp:176
+msgid "Map"
+msgstr "Carte"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:67
+msgid "Unknown"
+msgstr "Inconnu(e)"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:101
+msgid "Display"
+msgstr "Afficher"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:107
+msgid "Connection"
+msgstr "Connexion"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:113
+msgid "Exporter"
+msgstr "Exportation"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:119
+msgid "Unknown plugins"
+msgstr "Greffons inconnus"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:120 ../src/igotugui/plugindialog.cpp:139
+msgid "unknown"
+msgstr "inconnu(e)"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:138
+msgid "Invalid plugins"
+msgstr "Greffons non valides"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.cpp:169
+msgid "Refresh plugins"
+msgstr "Rafraîchir les greffons"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.ui:13
+msgid "Plugins"
+msgstr "Greffons"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.ui:26
+msgid "Name"
+msgstr "Nom"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.ui:31
+msgid "Id"
+msgstr "Identifiant"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.ui:36
+msgid "Priority"
+msgstr "Priorité"
+
+#. ts-context PluginDialog
+#: ../src/igotugui/plugindialog.ui:41
+msgid "Path"
+msgstr "Chemin d'accès"
+
+#. Use unicode character U+00B1 PLUS-MINUS SIGN
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:209
+msgid "GMT±%1:%2"
+msgstr "GMT±%1 : %2"
+
+#. Use unicode character U+2212 MINUS SIGN
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:215
+msgid "GMT−%1:%2"
+msgstr "GMT−%1 : %2"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:220
+msgid "GMT+%1:%2"
+msgstr "GMT+%1 : %2"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:226
+msgctxt "no update notification"
+msgid "Never"
+msgstr "Jamais"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:228
+msgid "Stable releases"
+msgstr "Versions stables"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:230
+msgid "Development snapshots"
+msgstr "Clichés de développement"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:233
+msgid "Tracks"
+msgstr "Traces"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.cpp:234
+msgid "Track segments"
+msgstr "Tracer des segments"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.ui:14
+msgid "Preferences"
+msgstr "Préférences"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.ui:20
+msgid "General"
+msgstr "Général"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.ui:26
+msgid "usb:<vendor>:<product> or serial:<n>"
+msgstr "usb:<vendor>:<product> ou de série :<n>"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.ui:29
+msgid "Device:"
+msgstr "Périphérique :"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.ui:42
+msgid "Time zone:"
+msgstr "Fuseau horaire :"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.ui:55
+msgid "Notify if a new version is available:"
+msgstr "Signaler si une nouvelle version est disponible :"
+
+#. ts-context PreferencesDialog
+#: ../src/igotugui/preferencesdialog.ui:68
+msgid "Group exported trackpoints into:"
+msgstr "Grouper les numéros de pistes exportés dans :"
+
+#. ts-context RawExporter
+#: ../src/rawexporter/rawexporter.cpp:68
+msgid "raw dump of the flash memory"
+msgstr "vidage complet de la mémoire flash"
+
+#. ts-context RawExporter
+#: ../src/rawexporter/rawexporter.cpp:78
+msgid "Raw files (%1)"
+msgstr "Fichier brut"
+
+#. ts-context igotu::Common
+#: ../src/igotu2gpx/igotu2gpx.cpp:158 ../src/igotugui/igotugui.cpp:81
+msgid "output this help and exit"
+msgstr "afficher cette aide et quitter"
+
+#. ts-context igotu::Common
+#: ../src/igotu2gpx/igotu2gpx.cpp:160 ../src/igotugui/igotugui.cpp:83
+msgid "output version information and exit"
+msgstr "afficher les informations de version et quitter"
+
+#. ts-context igotu::Common
+#: ../src/igotu2gpx/igotu2gpx.cpp:162 ../src/igotugui/igotugui.cpp:86
+msgid "increase verbosity"
+msgstr "Augmenter la verbosité"
+
+#. ts-context igotu::Common
+#: ../src/igotu2gpx/igotu2gpx.cpp:164 ../src/igotugui/igotugui.cpp:89
+msgid "very high verbosity"
+msgstr "très haute verbosité"
+
+#. ts-context igotu::Common
+#: ../src/igotu2gpx/igotu2gpx.cpp:177 ../src/igotugui/igotugui.cpp:98
+#: ../src/igotugui/mainwindow.cpp:115
+msgid ""
+"<h3>Igotu2gpx %1</h3><br/>Downloads tracks and waypoints from MobileAction i-"
+"gotU USB GPS travel loggers.<br/><br/>Copyright (C) 2009 Michael "
+"Hofmann.<br/>License GPLv3+: GNU GPL version 3 or later "
+"(http://gnu.org/licenses/gpl.html)<br/>This is free software: you are free "
+"to change and redistribute it.<br/>There is NO WARRANTY, to the extent "
+"permitted by law."
+msgstr ""
+"<h3>Igotu2gpx %1</h3><br/>Télécharge les traces et les points de passage "
+"depuis un  MobileAction i-gotU USB GPS.<br/><br />Droits réservés (C) 2009 "
+"Michael Hofmann.<br/>Licence GPLv3+ : GNU GPL version 3 ou ultérieure "
+"(http://gnu.org/licenses/gpl.html)<br/>Ce logiciel est libre : vous êtes "
+"libres de le modifier et de le redistribuer.<br/>Il n'y a AUCUNE GARANTIE, "
+"dans la mesure permise par la loi."
+
+#. ts-context igotu::Common
+#: ../src/igotu2gpx/igotu2gpx.cpp:190 ../src/igotugui/igotugui.cpp:111
+msgid "Usage: %1"
+msgstr "Utilisation : %1"
+
+#. ts-context igotu::Common
+#: ../src/igotu2gpx/igotu2gpx.cpp:199 ../src/igotugui/igotugui.cpp:118
+msgid "Unable to parse command line parameters: %1"
+msgstr "Impossible d'analyser les paramètres de ligne de commande : %1"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:123
+#: ../src/libusbconnection/libusbconnection.cpp:106
+msgid "Unable to find device '%1'"
+msgstr "Impossible de trouver le périphérique « %1 »"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:135
+#: ../src/libusbconnection/libusbconnection.cpp:116
+msgid "Unable to open device '%1'"
+msgstr "Impossible d'ouvrir le périphérique « %1 »"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:139
+#: ../src/libusbconnection/libusbconnection.cpp:122
+msgid "Interface 0 already claimed by kernel driver, detaching"
+msgstr "Interface 0 déjà utilisée par le noyau, annule"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:143
+#: ../src/libusbconnection/libusbconnection.cpp:127
+msgid "Unable to detach kernel driver from device '%1': %2"
+msgstr ""
+"Impossible de détacher le pilote du noyau du périphérique « %1 » : %2"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:151
+#: ../src/libusbconnection/libusbconnection.cpp:135
+msgid "Unable to claim interface 0 on device '%1'"
+msgstr "Impossible d'utiliser l'interface 0 du périphérique « %1 »"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:200
+#: ../src/libusb10connection/libusb10connection.cpp:203
+#: ../src/libusbconnection/libusbconnection.cpp:171
+#: ../src/libusbconnection/libusbconnection.cpp:174
+#: ../src/serialconnection/serialconnection.cpp:145
+#: ../src/serialconnection/serialconnection.cpp:152
+#: ../src/serialconnection/serialconnection.cpp:156
+msgid "Unable to send data to device: %1"
+msgstr "Impossible d'envoyer des données vers le périphérique : %1"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:204
+#: ../src/libusbconnection/libusbconnection.cpp:175
+#: ../src/serialconnection/serialconnection.cpp:157
+msgid "Only %1/%2 bytes could be sent"
+msgstr "%1/%2 octets peuvent être envoyés seulement"
+
+#. ts-context igotu::Common
+#: ../src/libusb10connection/libusb10connection.cpp:240
+#: ../src/libusb10connection/libusb10connection.cpp:265
+#: ../src/libusbconnection/libusbconnection.cpp:195
+#: ../src/serialconnection/serialconnection.cpp:177
+#: ../src/serialconnection/serialconnection.cpp:183
+msgid "Unable to read data from device: %1"
+msgstr "Impossible de lire les données du périphérique : %1"
+
+#. ts-context igotu::Common
+#: ../src/serialconnection/serialconnection.cpp:108
+#: ../src/serialconnection/serialconnection.cpp:123
+msgid "Unable to open device '%1': %2"
+msgstr "Impossible d'ouvrir le périphérique « %1  : %2"
+
+#. ts-context igotu::Common
+#: ../src/igotu/utils.cpp:38
+msgid "Memory contents:"
+msgstr "Contenu de la mémoire :"
+
+#. ts-context igotu::Common
+#: ../src/igotu/utils.cpp:60
+msgid "Differences:"
+msgstr "Différences :"
+
+#. ts-context igotu::Common
+#: ../src/igotu/utils.cpp:321
+msgid "Waypoint %1"
+msgstr "Point de passage %1"
+
+#. ts-context igotu::Common
+#: ../src/igotu/utils.cpp:340 ../src/igotu/utils.cpp:357
+#: ../src/igotu/utils.cpp:366
+msgid "Track %1"
+msgstr "Piste %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:70 ../src/igotu/commands.cpp:106
+#: ../src/igotu/commands.cpp:163
+msgid "Response too short"
+msgstr "Réponse trop courte"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:112
+msgid "Unknown (%1)"
+msgstr "Inconnu(e) (%1)"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:118
+msgid "GT-100"
+msgstr "GT-100"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:122
+msgid "GT-200"
+msgstr "GT-200"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:126
+msgid "GT-120"
+msgstr "GT-120"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:130
+msgid "GT-200e"
+msgstr "GT-200e"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:194 ../src/igotu/commands.cpp:266
+msgid "Wrong response length"
+msgstr "Mauvaise longueur de réponse"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/commands.cpp:245 ../src/igotu/commands.cpp:283
+#: ../src/igotu/commands.cpp:302 ../src/igotu/commands.cpp:319
+#: ../src/igotu/commands.cpp:339
+msgid "Response too long"
+msgstr "Réponse trop longue"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:54
+msgid "Response too short: expected %1, got %2 bytes"
+msgstr "Réponse trop courte : %1 attendu, %2 octets obtenus"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:58
+msgid "Invalid response packet: %1"
+msgstr "Paquet de réponse invalide : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:68
+msgid "Response data too short: expected %1, got %2 bytes"
+msgstr "Donnée de réponse trop courte : %1 attendu, %2 octets obtenus"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:92
+msgid "Device responded with error code: %1"
+msgstr "Le périphérique a répondu  avec le code erreur : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:95
+msgid "Non-empty intermediate response packet: %1"
+msgstr "Paquet de réponse intermédiaire non vide : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:174 ../src/igotu/igotucommand.cpp:183
+#: ../src/igotu/igotucommand.cpp:194 ../src/igotu/igotucommand.cpp:203
+#: ../src/igotu/igotucommand.cpp:210
+msgid "Command: %1"
+msgstr "Commande : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:176
+msgid "Protocol violated (ignored): %1"
+msgstr "Protocole violé (ignoré) : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:185
+msgid "Protocol violated : %1"
+msgstr "Protocole violé : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:196
+msgid "Device error: %1"
+msgstr "Erreur de périphérique : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:205
+msgid "Result: %1"
+msgstr "Résultat : %1"
+
+#. ts-context igotu::IgotuCommand
+#: ../src/igotu/igotucommand.cpp:212
+msgid "Failed: %1"
+msgstr "Échoué : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:209
+msgid "Unable to connect via '%1'"
+msgstr "Impossible de se connecter via « %1 »"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:269
+msgid "Serial number: %1"
+msgstr "Numéro de série : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:271
+msgid "Firmware version: %1"
+msgstr "Version du micrologiciel : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:277
+msgid "Model: %1"
+msgstr "Modèle : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:280
+msgid ""
+"Model: %1, please file a bug at http://bugs.launchpad.net/igotu2gpx/+filebug"
+msgstr ""
+"Modèle : %1, veuillez signaler un bogue via "
+"http://bugs.launchpad.net/igotu2gpx/+filebug"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:287
+msgid "Number of points: %1"
+msgstr "Nombre de points : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:297
+msgid "Uninitialized GPS tracker"
+msgstr "Traqueur GPS non initialisé"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:299
+msgid "Schedule date: %1"
+msgstr "Date prévue : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:302
+msgid "Schedule date offset: %n day(s)"
+msgid_plural "Schedule date offset: %n day(s)"
+msgstr[0] "Postposition de la date prévue : %n jour"
+msgstr[1] "Postposition de la date prévue : %n jours"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:307
+msgid "Schedule plans: %1"
+msgstr "Projets organisés : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:308 ../src/igotu/igotucontrol.cpp:380
+#: ../src/igotu/igotucontrol.cpp:384 ../src/igotu/igotucontrol.cpp:392
+msgid "enabled"
+msgstr "activé(e)"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:309
+msgid "Schedule plans used:"
+msgstr "Projets organisés utilisés :"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:313
+msgid "Schedule plan order:"
+msgstr "Ordre des projets organisés :"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:332
+msgid "Schedule plan %1:"
+msgstr "Plan organisé %1 :"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:336
+msgid "Start time: %1"
+msgstr "Heure de début : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:340
+msgid "End time: %1"
+msgstr "Heure de fin : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:344 ../src/igotu/igotucontrol.cpp:365
+msgid "Log interval: %1 s"
+msgstr "Intervalle d'enregistrement : %1 s"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:348 ../src/igotu/igotucontrol.cpp:355
+#: ../src/igotu/igotucontrol.cpp:368 ../src/igotu/igotucontrol.cpp:374
+msgid "Interval change: %1"
+msgstr "Changement d'intervalle : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:350 ../src/igotu/igotucontrol.cpp:370
+msgid "above %1 km/h, use %2 s"
+msgstr "au-dessus %1 km/h, utiliser %2 s"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:357 ../src/igotu/igotucontrol.cpp:363
+#: ../src/igotu/igotucontrol.cpp:375 ../src/igotu/igotucontrol.cpp:380
+#: ../src/igotu/igotucontrol.cpp:384 ../src/igotu/igotucontrol.cpp:393
+msgid "disabled"
+msgstr "désactivé(e)"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:362
+msgid "Schedule table: %1"
+msgstr "Table plannifiée : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:379
+msgid "LEDs: %1"
+msgstr "DEL : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:382
+msgid "Button: %1"
+msgstr "Bouton : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:387
+msgid "Security version: %1"
+msgstr "Version de sécurité : %1"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:390
+msgid "Password: %1, [%2]"
+msgstr "Mot de passe : %1, [%2]"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:435 ../src/igotu/igotucontrol.cpp:505
+#: ../src/igotu/igotucontrol.cpp:532 ../src/igotu/igotucontrol.cpp:591
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:443
+msgid "Invalid data"
+msgstr "Données invalides"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:472
+msgid "No device specified"
+msgstr "Aucun périphérique spécifié"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:848
+msgid "log interval (s)"
+msgstr "intervalle de connexion (s)"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:849
+msgid "interval change speed (km/h)"
+msgstr "intervalle de changement de vitesse (km / h)"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:850
+msgid "changed log interval (s)"
+msgstr "intervalle de connexion changé (s)"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:251
+msgid "Command timeout"
+msgstr "Temps expiré pour la commande"
+
+#. ts-context igotu::IgotuControl
+#: ../src/igotu/igotucontrol.cpp:493
+msgid ""
+"%1: Unable to clear memory of this GPS tracker model. Instructions how to "
+"help with this can be found at "
+"https://answers.launchpad.net/igotu2gpx/+faq/480."
+msgstr ""
+"%1 : Impossible d'effacer la mémoire de ce modèle de traqueur GPS. De l'aide "
+"à ce propos peut être trouvée sur le site "
+"https://answers.launchpad.net/igotu2gpx/+faq/480."
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:260
+msgid "Downloading configuration..."
+msgstr "Téléchargement de la configuration..."
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:405
+msgid "Unable to download configuration from GPS tracker: %1"
+msgstr "Impossible de télécharger la configuration du traqueur GPS : %1"
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:417
+msgid "Downloading tracks..."
+msgstr "Téléchargement des points..."
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:455
+msgid "Unable to download trackpoints from GPS tracker: %1"
+msgstr "Impossible de télécharger des points du traqueur GPS : %1"
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:467
+msgid "Clearing memory..."
+msgstr "Effacement de la mémoire..."
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:558
+msgid "Unable to clear memory of GPS tracker: %1"
+msgstr "Impossible de vider la mémoire du traqueur GPS : %1"
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:570
+msgid "Writing configuration..."
+msgstr "Écriture de la configuration..."
+
+#. ts-context igotu::IgotuControlPrivateWorker
+#: ../src/igotu/igotucontrol.cpp:609
+msgid "Unable to write configuration to GPS tracker: %1"
+msgstr "Impossible d'écrire la configuration sur le GPS : %1"
+
+#~ msgid "output in GPX format (this is the default)"
+#~ msgstr "sortie au format GPX (par défaut)"
+
+#~ msgid ""
+#~ "output the memory contents of the GPS tracker (be sure to redirect output to "
+#~ "a file)"
+#~ msgstr ""
+#~ "produit le contenu de la mémoire du traqueur GPS (n'oubliez pas de rediriger "
+#~ "la sortie vers un fichier)"
+
+#~ msgid "read memory contents from file (saved by \"dump --raw\")"
+#~ msgstr ""
+#~ "lire le contenu de la mémoire à partir du fichier (sauvegardé par \"dump - "
+#~ "raw\")"
+
+#~ msgid "Save All GPS Tracks"
+#~ msgstr "Sauvegarder tous les points GPS"
+
+#~ msgid "GPX files (*.gpx)"
+#~ msgstr "Fichiers GPX (*.gpx)"
+
+#~ msgid "%1 info|dump|clear|diff [OPTIONS...]"
+#~ msgstr "%1 info|dump|clear|diff [OPTIONS...]"
+
+#~ msgid "Downloaded block %1/%2"
+#~ msgstr "Bloc téléchargé %1/%2"
+
+#~ msgid "Cleared block %1/%2"
+#~ msgstr "Bloc effacé %1/%2"
+
+#~ msgid ""
+#~ "This function is highly experimental and may brick your GPS tracker! Only "
+#~ "use it if your GPS tracker has been identified correctly. Do you really want "
+#~ "to remove all tracks from the GPS tracker?"
+#~ msgstr ""
+#~ "Cette fonction est hautement expérimentale et peut endommager votre traqueur "
+#~ "GPS! Ne l'utilisez seulement que si votre traqueur GPS a été identifié "
+#~ "correctement. Voulez-vous vraiment supprimer toutes les pistes se trouvant "
+#~ "sur le traqueur GPS ?"
+
+#~ msgid "output a detailed representation of all trackpoints"
+#~ msgstr "produit une représentation détaillée de tous les points"
+
+#~ msgid "Unable to create temporary kml file: %1"
+#~ msgstr "Impossible de créer un fichier KML temporaire : %1"
+
+#~ msgid ""
+#~ "Please file a bug at https://bugs.launchpad.net/igotu2gpx/+filebug if the "
+#~ "use\n"
+#~ "of IGOTU2GPX_(NO)WORKAROUND solves your connection problems. Please "
+#~ "include:\n"
+#~ "- the tracker model and\n"
+#~ "- the output of igotu2gpx info"
+#~ msgstr ""
+#~ "Veuillez rapporter un bogue à l'adresse https: / / "
+#~ "bugs.launchpad.net/igotu2gpx / + filebug si l'utilisation\n"
+#~ "d'IGOTU2GPX_(NO)WORKAROUND résout vos problèmes de connexion. Veuillez "
+#~ "inclure :\n"
+#~ "- le modèle du récepteur\n"
+#~ "- le résultat de la ligne de commande igotu2gpx"
