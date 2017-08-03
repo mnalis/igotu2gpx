@@ -21,7 +21,7 @@
 
 #include <QtGlobal>
 
-#define IGOTU_VERSION_STR "0.4.0.227.10"
+#define IGOTU_VERSION_STR "0.4.0.227.11"
 
 #if defined(Q_CC_MSVC)
     #define DECLARE_DEPRECATED __declspec(deprecated)
