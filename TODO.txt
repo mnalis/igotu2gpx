@@ -1,19 +1,5 @@
 TODO
 
-- pull https://code.launchpad.net/~bben-pub/igotu2gpx/igotu2gpx
-
-  includes  212. By charles <charles@masterpingoo> on 2011-01-15 (Added 'clean' command support for GT-200e / GT-600) 
-   from https://code.launchpad.net/~charlesf/igotu2gpx/gt600
-  and it's own 213. By Benjamin on 2016-01-27 (Fix for the GT600 + year 2016)
-
-  last common branch:
-    revno: 211
-    committer: Michael Hofmann <mh21@piware.de>
-    branch nick: trunk
-    timestamp: Mon 2010-07-05 14:58:10 +0200
-    message:
-      Removed boost-po dependency, cleanup of exception names.
-
 - add GPX extensions - https://code.launchpad.net/~hopet/igotu2gpx/extended-gpx
   http://bazaar.launchpad.net/~hopet/igotu2gpx/extended-gpx/revision/183
 
