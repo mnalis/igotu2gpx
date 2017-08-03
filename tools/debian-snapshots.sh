@@ -2,6 +2,10 @@
 
 [ -d src ] || exit 1
 
+# pull last versions
+cd trunk-packaging && bzr pull; cd ..
+cd trunk-translations && bzr pull; cd ..; ln -sf -t translations trunk-translations/translations/*.po
+
 LASTVERSION=`sed -ne 's/^.*IGOTU_VERSION_STR "\(.*\)"/\1/p' src/lib/igotu/global.h`
 FULLVERSION=`sed -n 's/igotu2gpx (\([^-~ )]*\).*/\1/p;T;q' debian/changelog`
 
