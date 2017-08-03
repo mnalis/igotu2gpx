@@ -1,3 +1,10 @@
+igotu2gpx (0.4.0.227.14) jessie; urgency=medium
+
+  *  import: Fix for the GT600 + year 2016 <bben.pub@laposte.net> Wed Jan 27 00:09:50 2016 -0500
+  *  import: Added 'clean' command support for GT-200e / GT-600 <charles@masterpingoo> Sat Jan 15 00:21:24 2011 +0000
+
+ -- Matija Nalis <mnalis@skywalker.torres.voyager.hr>  Thu, 03 Aug 2017 15:15:37 +0200
+
 igotu2gpx (0.4.0.227.11) jessie; urgency=low
 
   * add translations
