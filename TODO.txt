@@ -27,10 +27,14 @@ TODO
     message:
       Cleanups.
 
-- add translations too?
++? add translations too?
   bzr branch lp:~igotu2gpx/igotu2gpx/trunk-translations  
 
 - check hackie branch ?
   http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/files
 
 - check https://bugs.launchpad.net/igotu2gpx
+
+- auto cleanup after successful build?
+
+- make a *.deb + .dsc + .changes etc. release on github

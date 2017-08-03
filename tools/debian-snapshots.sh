@@ -2,7 +2,13 @@
 
 [ -d src ] || exit 1
 
+[ -z "`git status --short`" ] || {
+    echo "Uncommitted changes, aborting" >&2
+    exit 1
+}
+
 # pull last versions
+bzr pull
 cd trunk-packaging && bzr pull; cd ..
 cd trunk-translations && bzr pull; cd ..; ln -sf -t translations trunk-translations/translations/*.po
 
@@ -13,7 +19,7 @@ echo "last version: $LASTVERSION"
 echo "new version: $FULLVERSION (temporary)"
 
 [ -z "`git status --short`" ] || {
-    echo "Uncommitted changes, aborting" >&2
+    echo "New stuff pulled from upstream - commit it first; aborting" >&2
     exit 1
 }
 
