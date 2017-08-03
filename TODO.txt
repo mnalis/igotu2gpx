@@ -27,8 +27,9 @@ TODO
     message:
       Cleanups.
 
-+? add translations too?
-  bzr branch lp:~igotu2gpx/igotu2gpx/trunk-translations  
+- add translations too?
+  (from bzr branch lp:~igotu2gpx/igotu2gpx/trunk-translations)
+  pulled, but does not seem to get included in .deb package
 
 - check hackie branch ?
   http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/files
