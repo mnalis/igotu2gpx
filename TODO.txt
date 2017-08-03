@@ -1,0 +1,34 @@
+TODO
+
+- pull https://code.launchpad.net/~bben-pub/igotu2gpx/igotu2gpx
+
+  includes  212. By charles <charles@masterpingoo> on 2011-01-15 (Added 'clean' command support for GT-200e / GT-600) 
+   from https://code.launchpad.net/~charlesf/igotu2gpx/gt600
+  and it's own 213. By Benjamin on 2016-01-27 (Fix for the GT600 + year 2016)
+
+  last common branch:
+    revno: 211
+    committer: Michael Hofmann <mh21@piware.de>
+    branch nick: trunk
+    timestamp: Mon 2010-07-05 14:58:10 +0200
+    message:
+      Removed boost-po dependency, cleanup of exception names.
+
+
+- pull https://code.launchpad.net/~ximilian/igotu2gpx/bugfixing
+
+   contains  219. By ximilian on 2012-07-29 (Bugfix: change in API)
+
+  last common branch:
+    revno: 218
+    committer: Michael Hofmann <mh21@piware.de>
+    branch nick: trunk
+    timestamp: Sat 2011-05-28 22:26:13 +0200
+    message:
+      Cleanups.
+
+- add translations too?
+  bzr branch lp:~igotu2gpx/igotu2gpx/trunk-translations  
+
+- check hackie branch ?
+  http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/files
