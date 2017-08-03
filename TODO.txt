@@ -1,9 +1,5 @@
 TODO
 
-- add GPX extensions - https://code.launchpad.net/~hopet/igotu2gpx/extended-gpx
-  http://bazaar.launchpad.net/~hopet/igotu2gpx/extended-gpx/revision/183
-
-
 - add translations too?
   (from bzr branch lp:~igotu2gpx/igotu2gpx/trunk-translations)
   +? pulled, but does not seem to get included in .deb package
