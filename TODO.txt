@@ -32,3 +32,5 @@ TODO
 
 - check hackie branch ?
   http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/files
+
+- check https://bugs.launchpad.net/igotu2gpx
