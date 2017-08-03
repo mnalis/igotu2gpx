@@ -15,18 +15,6 @@ TODO
       Removed boost-po dependency, cleanup of exception names.
 
 
-- pull https://code.launchpad.net/~ximilian/igotu2gpx/bugfixing
-
-   contains  219. By ximilian on 2012-07-29 (Bugfix: change in API)
-
-  last common branch:
-    revno: 218
-    committer: Michael Hofmann <mh21@piware.de>
-    branch nick: trunk
-    timestamp: Sat 2011-05-28 22:26:13 +0200
-    message:
-      Cleanups.
-
 - add translations too?
   (from bzr branch lp:~igotu2gpx/igotu2gpx/trunk-translations)
   pulled, but does not seem to get included in .deb package
