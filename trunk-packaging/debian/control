@@ -1,0 +1,21 @@
+Source: igotu2gpx
+Section: utils
+Priority: extra
+Maintainer: Michael Hofmann <mh21@mh21.de>
+Build-Depends: debhelper (>= 9), pkg-config, libqt4-dev, libboost-dev,
+ libusb-1.0-0-dev | libusb-dev, libmarble-dev, chrpath
+Standards-Version: 3.9.3
+Homepage: https://launchpad.net/igotu2gpx
+Vcs-Bzr: http://code.launchpad.net/igotu2gpx
+Vcs-Browser: http://code.launchpad.net/igotu2gpx
+
+
+Package: igotu2gpx
+Section: utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ marble-data, marble-plugins, openssl, lsb-release
+Description: Gives access to the i-gotU GPS trackers
+ Gives access to the i-gotU GPS trackers via an USB connection. It is possible
+ to see the configuration of the GPS tracker, export tracks and waypoints in
+ gpx format and clear the memory of the tracker.

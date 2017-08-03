@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- RELEASE=1
+
+override_dh_installudev:
+	dh_installudev --priority=51
+
+override_dh_auto_install:
+	dh_auto_install
+	rm debian/igotu2gpx/usr/lib/*.so
+	rm debian/igotu2gpx/usr/bin/tester
+	rm debian/igotu2gpx/usr/share/doc/igotu2gpx/LICENSE
