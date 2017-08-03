@@ -1,3 +1,9 @@
+igotu2gpx (0.4.0.227.16) jessie; urgency=medium
+
+  * add http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/revision/228 fix for "year 2016 bug"
+
+ -- Matija Nalis <mnalis@skywalker.torres.voyager.hr>  Thu, 03 Aug 2017 16:08:17 +0200
+
 igotu2gpx (0.4.0.227.15) jessie; urgency=medium
 
   * undo b8f029a79f459a6964cd3fbac49404c7bee35454 bben fix for 2016, as it breaks on GT-200 (too many datapoints)
