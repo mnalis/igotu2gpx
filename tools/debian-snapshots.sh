@@ -16,4 +16,7 @@ echo "new version: $FULLVERSION (temporary)"
 sed -i 's/\(#define \{1,\}IGOTU_VERSION_STR \).*/\1'"\"$FULLVERSION\"/" src/lib/igotu/global.h
 git commit --all --message="bump version to $FULLVERSION when building .deb" --edit
 
-debuild -sa
+debuild -sa -i -us -uc -b
+
+# cleanup with:
+# fakeroot debian/rules clean; rm -rf bin/ tags
