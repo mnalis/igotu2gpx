@@ -45,7 +45,6 @@ public:
     bool isTrackStart() const;
 
     QDateTime dateTime() const;
-    int year(unsigned yearOffset) const;
     // offset in seconds
     QString humanDateTimeString(int utcOffset = 0) const;
     // offset in seconds
