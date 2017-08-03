@@ -1,3 +1,9 @@
+igotu2gpx (0.4.0.227.15) jessie; urgency=medium
+
+  * undo b8f029a79f459a6964cd3fbac49404c7bee35454 bben fix for 2016, as it breaks on GT-200 (too many datapoints)
+
+ -- Matija Nalis <mnalis@skywalker.torres.voyager.hr>  Thu, 03 Aug 2017 15:45:50 +0200
+
 igotu2gpx (0.4.0.227.14) jessie; urgency=medium
 
   *  import: Fix for the GT600 + year 2016 <bben.pub@laposte.net> Wed Jan 27 00:09:50 2016 -0500
