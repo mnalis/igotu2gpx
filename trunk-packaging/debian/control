@@ -1,13 +1,13 @@
 Source: igotu2gpx
 Section: utils
 Priority: extra
-Maintainer: Michael Hofmann <mh21@mh21.de>
+Maintainer: Matija Nalis <mnalis-git@voyager.hr>
 Build-Depends: debhelper (>= 9), pkg-config, libqt4-dev, libboost-dev,
  libusb-1.0-0-dev | libusb-dev, libmarble-dev, chrpath
 Standards-Version: 3.9.3
 Homepage: https://launchpad.net/igotu2gpx
-Vcs-Bzr: http://code.launchpad.net/igotu2gpx
-Vcs-Browser: http://code.launchpad.net/igotu2gpx
+Vcs-Git: https://github.com/mnalis/igotu2gpx.git
+Vcs-Browser: https://github.com/mnalis/igotu2gpx
 
 
 Package: igotu2gpx
