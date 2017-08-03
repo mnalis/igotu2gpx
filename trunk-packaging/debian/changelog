@@ -1,3 +1,9 @@
+igotu2gpx (0.4.0.227.17) jessie; urgency=medium
+
+  * import: extra data in GPX extensions: http://bazaar.launchpad.net/~hopet/igotu2gpx/extended-gpx/revision/183
+
+ -- Matija Nalis <mnalis@skywalker.torres.voyager.hr>  Thu, 03 Aug 2017 16:29:07 +0200
+
 igotu2gpx (0.4.0.227.16) jessie; urgency=medium
 
   * add http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/revision/228 fix for "year 2016 bug"
