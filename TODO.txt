@@ -6,10 +6,11 @@ TODO
 
 - add translations too?
   (from bzr branch lp:~igotu2gpx/igotu2gpx/trunk-translations)
-  pulled, but does not seem to get included in .deb package
+  +? pulled, but does not seem to get included in .deb package
 
 - check hackie branch ?
   http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/files
+  + merged just "year 2016 fix" from http://bazaar.launchpad.net/~hackie/igotu2gpx/0.4+y2016+qt5/revision/228 (from bzr-hackie git branch) to hackie2016 branch
 
 - check https://bugs.launchpad.net/igotu2gpx
 
