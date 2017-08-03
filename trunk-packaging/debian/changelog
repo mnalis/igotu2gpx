@@ -1,3 +1,9 @@
+igotu2gpx (0.4.0.227.10) jessie; urgency=low
+
+  * prepare packaging latest version on https://github.com/mnalis/igotu2gpx
+
+ -- Matija Nalis <mnalis-github@voyager.hr>  Thu, 03 Aug 2017 12:01:53 +0200
+
 igotu2gpx (0.4.0) unstable; urgency=low
 
   * Initial release
