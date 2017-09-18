@@ -10,6 +10,8 @@ trunk-packaging/debian/igotu2gpx.postrm.debhelper
 trunk-packaging/debian/igotu2gpx.preinst.debhelper
 trunk-packaging/debian/igotu2gpx.substvars
 trunk-packaging/debian/igotu2gpx/
+trunk-packaging/debian/.debhelper/
+trunk-packaging/debian/debhelper-build-stamp
 Makefile
 src/connections/libusb10connection/Makefile
 src/connections/libusbconnection/Makefile
