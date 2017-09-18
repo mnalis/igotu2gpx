@@ -29,7 +29,7 @@ clebsCheck(libmarble) {
 		MARBLEINCLUDEDIR = /usr/include
 	    }
 	}
-	isEmpty(MARBLELIB):MARBLELIB = marblewidget
+	isEmpty(MARBLELIB):MARBLELIB = marblewidget-qt5
 
 	exists($${MARBLEINCLUDEDIR}/marble):CLEBS_DEPENDENCIES *= libmarble
 	exists($${MARBLEINCLUDEDIR}/marble):CLEBS_DEPENDENCIES *= libmarble
