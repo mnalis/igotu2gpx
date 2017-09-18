@@ -26,3 +26,4 @@ src/programs/igotugui/Makefile
 src/tests/Makefile
 src/visualizers/listvisualizer/Makefile
 src/visualizers/marblevisualizer/Makefile
+.qmake.stash
