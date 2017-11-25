@@ -1,3 +1,10 @@
+igotu2gpx (0.4.0.227.19) jessie; urgency=medium
+
+  * rebuild on jessie
+  * disable marble visualizer in jessie-nomarble branch
+
+ -- Matija Nalis <mnalis@eagle102.home.lan>  Sat, 25 Nov 2017 19:13:17 +0100
+
 igotu2gpx (0.4.0.227.18) stretch; urgency=medium
 
   * update for stretch
