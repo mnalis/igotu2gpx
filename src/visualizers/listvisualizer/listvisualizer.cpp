@@ -74,7 +74,10 @@ public:
             QWidget *parent = NULL) const;
 };
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 Q_EXPORT_PLUGIN2(listVisualizer, ListVisualizerCreator)
+#endif
+
 
 static QString formatCoordinates(const IgotuPoint &point)
 {

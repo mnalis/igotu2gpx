@@ -44,7 +44,10 @@ public:
             bool tracksAsSegments, int utcOffset) const;
 };
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 Q_EXPORT_PLUGIN2(rawExporter, RawExporter)
+#endif
+
 
 // RawExporter =====================================================
 

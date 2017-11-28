@@ -67,7 +67,10 @@ public:
     virtual DataConnection *createDataConnection(const QString &id) const;
 };
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 Q_EXPORT_PLUGIN2(serialConnection, SerialConnectionCreator)
+#endif
+
 
 #ifdef Q_OS_WIN32
 QString errorString(DWORD err)

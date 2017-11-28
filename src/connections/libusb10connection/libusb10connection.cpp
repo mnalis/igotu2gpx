@@ -112,7 +112,10 @@ public:
     virtual DataConnection *createDataConnection(const QString &id) const;
 };
 
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 Q_EXPORT_PLUGIN2(libusb10Connection, Libusb10ConnectionCreator)
+#endif
+
 
 // Put translations in the right context
 //
