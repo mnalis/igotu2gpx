@@ -4,7 +4,7 @@
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- RELEASE=1
+	QT_SELECT=qt4 dh_auto_configure -- RELEASE=1
 
 override_dh_installudev:
 	dh_installudev --priority=51

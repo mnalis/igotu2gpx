@@ -1,3 +1,9 @@
+igotu2gpx (0.4.0.227.19b) jessie; urgency=medium
+
+  * force using QT4
+
+ -- Matija Nalis <mnalis@skywalker.torres.voyager.hr>  Tue, 28 Nov 2017 15:38:07 +0100
+
 igotu2gpx (0.4.0.227.19) jessie; urgency=medium
 
   * rebuild on jessie
