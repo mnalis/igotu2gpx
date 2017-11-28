@@ -100,7 +100,7 @@ void connectSlotsByNameToPrivate(QObject *publicObject, QObject *privateObject)
         return;
     const QMetaObject *mo = privateObject->metaObject();
     RETURN_IF_FAIL(mo);
-    const QObjectList list = qFindChildren<QObject*>(publicObject, QString());
+    const QObjectList list = publicObject->findChildren<QObject*>(QString());
     for (int i = 0; i < mo->methodCount(); ++i) {
         const char *slot = mo->method(i).signature();
         RETURN_IF_FAIL(slot);
