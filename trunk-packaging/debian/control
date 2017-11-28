@@ -2,7 +2,7 @@ Source: igotu2gpx
 Section: utils
 Priority: extra
 Maintainer: Matija Nalis <mnalis-git@voyager.hr>
-Build-Depends: debhelper (>= 9), pkg-config, libqt4-dev, libboost-dev,
+Build-Depends: debhelper (>= 9), pkg-config, qtbase5-dev, libboost-dev,
  libusb-1.0-0-dev | libusb-dev, chrpath
 Standards-Version: 3.9.3
 Homepage: https://launchpad.net/igotu2gpx

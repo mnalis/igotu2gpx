@@ -1,3 +1,9 @@
+igotu2gpx (0.4.0.227.20) stretch; urgency=medium
+
+  * depends for stretch
+
+ -- Matija Nalis <mnalis@skywalker.torres.voyager.hr>  Tue, 28 Nov 2017 13:50:46 +0100
+
 igotu2gpx (0.4.0.227.19) jessie; urgency=medium
 
   * rebuild on jessie
