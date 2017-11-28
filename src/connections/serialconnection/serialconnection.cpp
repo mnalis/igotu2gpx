@@ -99,7 +99,7 @@ SerialConnection::SerialConnection(const QString &port)
 #ifdef Q_OS_WIN32
     if (ok)
         device = QString::fromLatin1("\\\\.\\COM%1").arg(portNumber);
-    handle = CreateFileA(device.toAscii(),
+    handle = CreateFileA(device.toLatin1(),
                 GENERIC_READ | GENERIC_WRITE,
                 0,
                 NULL,
@@ -120,7 +120,7 @@ SerialConnection::SerialConnection(const QString &port)
 #else
     if (ok)
         device = QString::fromLatin1("/dev/ttyUSB%1").arg(portNumber);
-    handle = open(device.toAscii(), O_RDWR | O_NOCTTY);
+    handle = open(device.toLatin1(), O_RDWR | O_NOCTTY);
     if (handle == -1)
         throw Exception(Common::tr("Unable to open device '%1': %2")
             .arg(device, QString::fromLocal8Bit(strerror(errno))));

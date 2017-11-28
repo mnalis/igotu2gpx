@@ -231,7 +231,7 @@ void UpdateNotificationPrivate::requestReleases(const QString &os)
     if (url.hasQuery())
         path += '?' + url.encodedQuery();
 
-    QHttpRequestHeader header(QLatin1String("GET"), QString::fromAscii(path));
+    QHttpRequestHeader header(QLatin1String("GET"), QString::fromLatin1(path));
     header.setValue(QLatin1String("Host"), url.host() + QLatin1Char(':') +
             QString::number(url.port
                 (url.scheme().toLower() == QLatin1String("https") ? 443 : 80)));

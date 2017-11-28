@@ -109,7 +109,7 @@ void connectSlotsByNameToPrivate(QObject *publicObject, QObject *privateObject)
         bool foundIt = false;
         for(int j = 0; j < list.count(); ++j) {
             const QObject *co = list.at(j);
-            QByteArray objName = co->objectName().toAscii();
+            QByteArray objName = co->objectName().toLatin1();
             int len = objName.length();
             if (!len || qstrncmp(slot + 3, objName.data(), len) ||
                     slot[len+3] != '_')
