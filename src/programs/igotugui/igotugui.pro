@@ -2,7 +2,7 @@ CLEBS *= igotu
 TARGET = igotugui
 include(../../../clebs.pri)
 
-QT *= gui network
+QT *= gui network widgets
 
 win32:LIBS *= -lshell32
 
