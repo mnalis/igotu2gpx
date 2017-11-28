@@ -102,7 +102,7 @@ void connectSlotsByNameToPrivate(QObject *publicObject, QObject *privateObject)
     RETURN_IF_FAIL(mo);
     const QObjectList list = publicObject->findChildren<QObject*>(QString());
     for (int i = 0; i < mo->methodCount(); ++i) {
-        const char *slot = mo->method(i).signature();
+        const char *slot = mo->method(i).methodSignature();
         RETURN_IF_FAIL(slot);
         if (slot[0] != 'o' || slot[1] != 'n' || slot[2] != '_')
             continue;
@@ -122,7 +122,7 @@ void connectSlotsByNameToPrivate(QObject *publicObject, QObject *privateObject)
                     if (smo->method(k).methodType() != QMetaMethod::Signal)
                         continue;
 
-                    if (!qstrncmp(smo->method(k).signature(), slot + len + 4,
+                    if (!qstrncmp(smo->method(k).methodSignature(), slot + len + 4,
                                 slotlen)) {
                         sigIndex = k;
                         break;
@@ -157,7 +157,7 @@ void connectWorker(QObject *workerObject, QObject *publicObject, QObject *privat
     for (unsigned i = mo->methodOffset(); i < unsigned(mo->methodCount()); ++i) {
         const QMetaMethod m = mo->method(i);
         const QMetaMethod::MethodType t = m.methodType();
-        const char * const signature = m.signature();
+        const char * const signature = m.methodSignature();
         if (t == QMetaMethod::Signal) {
             int index = pubMo->indexOfMethod(signature);
             if (index < 0 ||
