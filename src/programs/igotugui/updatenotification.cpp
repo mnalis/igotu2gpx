@@ -22,7 +22,9 @@
 
 #include <QCoreApplication>
 #include <QDateTime>
+#if QT_VERSION < QT_VERSION_CHECK(5,0,0)	// FIXME: DISABLE update notifications on QT5 for now, need rewrite?
 #include <QHttp>
+#endif
 #include <QProcess>
 #include <QSettings>
 #include <QSslError>
@@ -47,14 +49,18 @@ public:
     void setLastCheck();
 
 public Q_SLOTS:
+#if QT_VERSION < QT_VERSION_CHECK(5,0,0)	// FIXME: DISABLE update notifications on QT5 for now, need rewrite?
     void on_http_sslErrors(const QList<QSslError> &errors);
     void on_http_done(bool error);
+#endif
     void on_lsbRelease_finished(int exitCode, QProcess::ExitStatus exitStatus);
     void on_lsbRelease_error();
 
 public:
     UpdateNotification *p;
+#if QT_VERSION < QT_VERSION_CHECK(5,0,0)	// FIXME: DISABLE update notifications on QT5 for now, need rewrite?
     QHttp *http;
+#endif
     QProcess *lsbRelease;
     bool lsbReleaseError;
     UpdateNotification::Type type;
@@ -215,6 +221,7 @@ void UpdateNotificationPrivate::requestReleases(const QString &os)
     RETURN_IF_FAIL(url.scheme().toLower() == QLatin1String("https") ||
                    url.scheme().toLower() == QLatin1String("http"));
 
+#if QT_VERSION < QT_VERSION_CHECK(5,0,0)	// FIXME: DISABLE update notifications on QT5 for now, need rewrite?
     url.addQueryItem(QLatin1String("os"), os);
     url.addQueryItem(QLatin1String("version"), QLatin1String(IGOTU_VERSION_STR));
     url.addQueryItem(QLatin1String("uuid"), uuid());
@@ -238,8 +245,10 @@ void UpdateNotificationPrivate::requestReleases(const QString &os)
     header.setValue(QLatin1String("User-Agent"), QLatin1String("Igotu2gpx/") +
             QLatin1String(IGOTU_VERSION_STR));
     http->request(header);
+#endif
 }
 
+#if QT_VERSION < QT_VERSION_CHECK(5,0,0)	// FIXME: DISABLE update notifications on QT5 for now, need rewrite?
 void UpdateNotificationPrivate::on_http_sslErrors(const QList<QSslError> &errors)
 {
     Q_FOREACH (const QSslError &error, errors)
@@ -298,6 +307,7 @@ void UpdateNotificationPrivate::on_http_done(bool error)
     emit p->newVersionAvailable(newestVersion,
             settings.value(QLatin1String("name")).toString(), url);
 }
+#endif
 
 void UpdateNotificationPrivate::on_lsbRelease_error()
 {
@@ -339,8 +349,10 @@ UpdateNotification::UpdateNotification(QObject *parent) :
 
     setUpdateNotification(defaultUpdateNotification());
 
+#if QT_VERSION < QT_VERSION_CHECK(5,0,0)	// FIXME: DISABLE update notifications on QT5 for now, need rewrite?
     d->http = new QHttp(this);
     d->http->setObjectName(QLatin1String("http"));
+#endif
 
     d->lsbRelease = new QProcess(this);
     d->lsbRelease->setObjectName(QLatin1String("lsbRelease"));
